@@ -1,8 +1,55 @@
-<html>	
+<html>
 	<head>
-		<title>My First Web Application</title>
+		<title>10000 Codesrs</title>
+		<link rel="stylesheet" type="text/css" href="my_first_stylesheetcss.css">
+		<style>
+			#paragraph_1{
+				color: black;	
+			}
+			#paragraph_2{
+				text-decoration: underline;
+			}
+        </style>	
 	</head>
 	<body>
-		<h1>This is my first web project. oh, I'm exicited!!!</h1>
+		<img src="data:image/png;base64,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"/>
+		<h1 name="abcd">Welcome to 10000 Coders Programming Challenge</h1>
+	    <h4>Hello guys</h4>
+		<p>Welcome to the HTML/css programming exercise by 10000 coders. This will test your basics in HTML</p>
+	    <p id="paragraph_1" Class="paragraph_1">and CSS. You need to recreate the document you are reading now using HTML/CSS. Make sure that the</p>
+		<p id="paragraph_2" Class="paragraph_1">page looks like exactly like this document.</p>
+		<h2 style="color: blue">General Instructions</h2>
+		 <ol type="1.">
+			<li>There will be a 15px margin between all elements in the form shown below</li>
+			<li>Use external CSS for styling</li>
+			<li>This exercise will cover the following constructs of HTML</li>
+	
+	    </ol> 
+		<ul>
+			<li>HTML Form</li>
+			<li>Text inputs with placeholders</li>
+			<li>Text area</li>
+			<li>Password input</li>
+			<li>Select drop-down box</li>
+			<li>Radio buttons</li>
+			<li>Checkboxes and</li>
+			<li>Buttons</li>
+		<ul>
+		<h3 Class="testing-box">                      So, let's get started. All the best !</h3>
+		<p><b>Full Name</b>             Enter your first name</p>
+		<p><b>Secret Pin</b>            Enter your secret pin</p>
+		<p><b>Gender</b>               	<b>. </b> Male <b>. </b> Female</p>
+		<p><b>I am an expert in</b>    	<b>. </b> HTML <b>. </b> CSS</p>
+		<p><b>My field of study is</b>  Select your branch using this select drop-down</p>
+		<p><b>Tell more about yourself</b>  This is text area. Enter your description.</p>
+			 <button>submit form</button>
+			
+			
+			<script>
+				let paragraph1Text =document.getElementById("paragraph_1").innerText;
+				alert(paragraph1Text);
+				
+			</script>
 	</body>
-</html>		
+	
+</html>	
