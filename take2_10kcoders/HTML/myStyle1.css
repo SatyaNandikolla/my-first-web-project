@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+#wrapper{
+    width:960px;
+    height:150px;
+    background: lightgray;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+h2{
+    text-align: center;
+    color: black !important;
+}
+#content{
+    width: 960px;
+    background: yellow; 
+    padding: 5px;    
+}
+#leftBox{
+    width: 30%;
+    height: 200px;
+    float: left;
+    background: cyan;
+}
+#rightBox{
+    width: 70%;
+    height: 200px;
+    float: left;
+    background: darkgreen;
+}
