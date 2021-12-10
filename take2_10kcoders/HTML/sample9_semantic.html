@@ -1,3 +1,7 @@
+   <!--selccting with element name--> 
+   <!--selcting with id-->
+   <!--selcting with class-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h2{
+        color: red;
+    }
+    #myHeading{
+        color: blue;
+    }
+    .myj{
+        color:green;
+    }
+    /*group selector*/
+    #myHeading .myj h2{
+        font-family: sans-serif;
+    }
+</style>
 
 <body>
-    
+    <h2>hello from html5</h2>  
+    <h2 id="myHeading">hello from html5</h2>  
+    <h2 class="myj">hello from html5</h2>
 </body>
 </html>
