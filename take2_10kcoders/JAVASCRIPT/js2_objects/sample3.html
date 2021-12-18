@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick ="addSkills()">Add Skill</button>
+    <button onclick ="addCompany()">Add Company</button>
+    <button onclick ="deleteExperiance()">Delete Experiance</button>
+    <script>
+        //objects
+        //1. literal way
+        var person ={
+            fname:"satya",//property of an object
+            laname:"nandikolla",
+            age:21,
+            isLoookingForJob:true,
+            experiance: null
+        }
+        //an empty object is created
+        console.log(person)
+        //2. oop (object oriented programming)
+
+        function addSkills(){
+            person.skill = "UI Developer"
+            console.log(person)
+        }
+        function addCompany(){
+            person ["company"]= "DELL"
+            console.log(person)
+        }
+        function deleteExperiance(){
+            delete person.experiance
+            console.log(person)
+        }
+    </script>
+</body>
+</html>
