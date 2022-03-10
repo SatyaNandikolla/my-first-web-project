@@ -1,11 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import { Krishna, Murali, Sam } from './Functional_Components/Murali';
-import { Kiran } from './Class_Components/Narendhra';
-// import some from './Narendhra';
-import Abc from "./Class_Components/Narendhra";
-import { Harish } from './Class_Components/Harish';
-
+import { Employees } from './Functional_Components/Employees';
+import { Students } from './Functional_Components/Students';
+import { Teja } from './Functional_Components/Teja';
 
 function App() {
   return (
@@ -19,7 +15,10 @@ function App() {
       {/* {console.log(some)} */}
       {/* <Kiran />
       <Abc /> */}
-      <Harish/> 
+      {/* <Harish/>  */}
+      {/* <Teja/> */}
+      <Students/>
+      <Employees/>
     </div>
   );
 }
