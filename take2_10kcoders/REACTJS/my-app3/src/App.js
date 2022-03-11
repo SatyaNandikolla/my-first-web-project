@@ -3,11 +3,12 @@ import './App.css';
 import { ClassRoom } from './ClassRoom';
 import { User } from './User';
 
+
 function App() {
   return (
     <div className="App">
       {/* <ClassRoom/> */}
-     <User/>
+      <User/>  
     </div>
   );
 }
