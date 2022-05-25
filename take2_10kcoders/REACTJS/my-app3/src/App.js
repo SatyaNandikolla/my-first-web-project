@@ -2,7 +2,7 @@
 // import N from "./N";
 // import Murali, { Satya } from "./Murali";
 
-import ParentMounting from "./Life_Cycles/Mounting_phase/parentMounting";
+import ParentMounting from "./Life_Cycles/Mounting_phase/Parent";
 
 
 
