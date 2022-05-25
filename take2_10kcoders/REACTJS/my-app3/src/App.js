@@ -1,8 +1,7 @@
 
 // import N from "./N";
 // import Murali, { Satya } from "./Murali";
-
-import ParentMounting from "./Life_Cycles/Mounting_phase/Parent";
+import Parentun from "./Life_Cycles/Updating_Phase/Parentun";
 
 
 
@@ -27,8 +26,7 @@ return(
   {/* <Child1/> */}
   {/* <ClassRoom1/> */}
   {/* <Forms/> */}
-  <ParentMounting/>
-  
+  <Parentun/>  
   </center>
   </div>
 )
