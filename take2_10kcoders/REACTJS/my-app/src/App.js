@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Satya from './Satya';
+import React from "react";
+import Satya from "./Parent";
 
-function App() {
+
+
+ function App(){
   return (
-    <div className="App">
-       <Satya/>
-    </div>
-  );
-}
-
-export default App;
+  <div><h2>Hello I AM From App Component</h2>
+  <Satya/>
+  </div>
+  )
+} 
+export default App; 
