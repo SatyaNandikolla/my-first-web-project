@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        step1(10,function(result1,error){
+            if(!error){
+                step2(result1,function(result2,error){
+                    if(error){
+                        console.log("Results",result2)
+                    }
+                })
+            }
+        })
+        function step1(value,callback){
+            callback(value+10,false)
+        }
+        function step2(value,callback){
+            callback(value+10,false)
+        }
+    </script>
+</body>
+</html>

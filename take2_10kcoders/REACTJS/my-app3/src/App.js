@@ -1,34 +1,19 @@
-
-// import N from "./N";
-// import Murali, { Satya } from "./Murali";
-import Parentun from "./Life_Cycles/Updating_Phase/Parentun";
-
-
-
-// import { Forms } from "./Forms";
-
-// import { ClassRoom1 } from "./ClassRoom1";
-
-// import Parent from "./Parent";
-// import { Child1 } from "./Child1";
-// import { Parent1 } from "./Parent1";
+import React from "react";
+import ClickCounter1 from "./RenderProps/ClickCounter1";
+import Counter from "./RenderProps/Counter";
+import HoverCounter1 from "./RenderProps/HoverCounter1";
+import User from "./RenderProps/User";
 
 
-function App(){
-return(
-  <div>
-    <center>
-  <h2>Hello I Am From App Component</h2>
-  {/* <Murali/>
-  <Satya/> */}
-  {/* <N/> */}
-  {/* <Parent1/> */}
-  {/* <Child1/> */}
-  {/* <ClassRoom1/> */}
-  {/* <Forms/> */}
-  <Parentun/>  
-  </center>
-  </div>
-)
-}
-export default App;
+ function App(){
+   return(
+     <div>
+       <h2>Hello</h2>
+       
+       <User render={(isLoggedIn)=>(isLoggedIn ? "Satya" : "Guest")}/>
+       <Counter render={(count,handleChange)=><ClickCounter1 count={count} handleChange={handleChange}/>}/>
+     <Counter render={(count,handleChange)=><HoverCounter1 count={count} handleChange={handleChange}/>}/>
+     </div>
+   )
+ } 
+ export default App;

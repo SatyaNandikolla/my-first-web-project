@@ -1,24 +1,20 @@
-import './App.css';
-import { Employees } from './Functional_Components/Employees';
-import { Students } from './Functional_Components/Students';
-import { Teja } from './Functional_Components/Teja';
+import React from "react";
+import Questions from "./Questions.json";
+import Display from "./Display";
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hello From App</h2>
-      {/* <Murali />
-      <Krishna />
-      <Sam /> */}
-      {/* <Narendhra/> */}
-      {/* <Ervin/> */}
-      {/* {console.log(some)} */}
-      {/* <Kiran />
-      <Abc /> */}
-      {/* <Harish/>  */}
-      {/* <Teja/> */}
-      <Students/>
-      <Employees/>
+    <div> 
+      <center>
+      <h2>Hello From App</h2> 
+      {Questions.map((question,index)=>{
+        return(
+        // <h2 key={question}>{question.title}</h2>
+        <Display question={question}/>
+        )
+      })}
+      </center>
     </div>
   );
 }

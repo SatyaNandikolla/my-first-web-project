@@ -1,13 +1,15 @@
 import React from "react";
-import Satya from "./Parent";
+// import Users from "./Users";
+import "./App.css";
+import UserFunc from "./UserFunc";
 
-
-
- function App(){
-  return (
-  <div><h2>Hello I AM From App Component</h2>
-  <Satya/>
-  </div>
+function App(){
+  return(
+    <div>
+      <h2>Hello</h2>
+      {/* <Users/> */}
+      <UserFunc/>
+    </div>
   )
-} 
-export default App; 
+}
+export default App;
