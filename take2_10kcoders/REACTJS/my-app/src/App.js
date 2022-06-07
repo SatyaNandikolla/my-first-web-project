@@ -1,15 +1,21 @@
 import React from "react";
 // import Users from "./Users";
 import "./App.css";
-import UserFunc from "./UserFunc";
+import {connect} from "react-redux";
+import {IncAction} from "./actions";
+import {DecAction} from "./actions"
 
-function App(){
+
+function App({local_Variable,IncAction,DecAction}){
   return(
     <div>
-      <h2>Hello</h2>
-      {/* <Users/> */}
-      <UserFunc/>
+      <h2>{local_Variable}</h2> 
+      <button onClick={()=>IncAction(5)}>Increment</button>
+      <button onClick={DecAction}>Decrement</button>
     </div>
   )
 }
-export default App;
+const mapStateToProps=state=>({
+  local_Variable:state
+})
+export default connect(mapStateToProps,{IncAction,DecAction})(App);
