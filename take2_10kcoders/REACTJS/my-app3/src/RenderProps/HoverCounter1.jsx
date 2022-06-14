@@ -13,7 +13,7 @@ class HoverCounter1 extends Component{
     render(){
         return(
             <div>
-            <h2 onMouseOver={this.props.handleChange}>You Hovered {this.props.count} times</h2>
+                <h3 onMouseOver={this.props.handleChange}>you Hovered {this.props.count} times</h3>
             </div>
         )
     }

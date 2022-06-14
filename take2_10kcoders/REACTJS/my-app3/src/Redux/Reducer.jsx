@@ -1,10 +1,10 @@
-const count=0
+const count=5
 
 export default function Reducer(state=count,action){
     const {type,payload}=action;
     switch(type){
         case "Increment":
-            return state+1;
+            return state+payload;
         case "Decrement":
             return state-1;
         default:

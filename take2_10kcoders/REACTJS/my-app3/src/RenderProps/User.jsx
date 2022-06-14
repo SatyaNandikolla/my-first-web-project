@@ -1,12 +1,11 @@
 import { Component } from "react";
 
-class User  extends Component{
+class User extends Component{
     render(){
         return(
             <div>
-                <h2>User Name is {this.props.render(false)}</h2>
+                <h2>User Name Is {this.props.render(false)}</h2>
             </div>
-
         )
     }
 }

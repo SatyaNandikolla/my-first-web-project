@@ -13,11 +13,10 @@ class ClickCounter1 extends Component{
     render(){
         return(
             <div>
-                <h2>You Clicked {this.props.count} times</h2>
+                <h3>You Clicked {this.props.count} times</h3>
                 <button onClick={this.props.handleChange}>Clicked</button>
             </div>
         )
     }
-
 }
-export default ClickCounter1;
+export default ClickCounter1

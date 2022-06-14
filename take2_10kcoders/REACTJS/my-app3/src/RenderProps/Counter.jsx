@@ -13,7 +13,7 @@ class Counter extends Component{
     render(){
         return(
             <div>
-                {this.props.render(this.state.count, this.handleChange)}
+                <h2>{this.props.render(this.state.count,this.handleChange)}</h2>
             </div>
         )
     }

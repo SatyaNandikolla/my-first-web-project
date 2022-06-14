@@ -4,7 +4,9 @@ export default class NormalComp extends Component{
     render(){
         console.log("Normal Component")
         return(
-            <div>Normal Component</div>
+            <div>
+                <h2>Normal Component</h2>
+            </div>
         )
     }
 }

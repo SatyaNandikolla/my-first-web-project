@@ -4,20 +4,20 @@ import Hoc from "./Hoc";
 class ClickCounter extends Component{
     // constructor(){
     //     super()
-    //     this.state={
-    //         count:0
-    //     }
+    //         this.state={
+    //             count:0
+    //         }
     // }
     // handleChange=()=>{
     //     this.setState({count:this.state.count+1})
     // }
     render(){
-        return (
+        return(
             <div>
-                <h2>You clicked {this.props.count} times</h2>
-                <button onClick={this.props.handleChange}>Click</button>
+                <h2>You Clicked {this.props.count} times</h2>
+                <button onClick={this.props.handleChange}>Clicked</button>
             </div>
         )
     }
 }
-export default Hoc(ClickCounter);
+export default Hoc(ClickCounter)
